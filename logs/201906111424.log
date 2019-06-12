@@ -1,0 +1,20 @@
+2019-06-11 14:24:55,299 ttest3_地址流程.py[line:53] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=8F6DAB9B5669AFCD36E3C70E68FB0F98 for 192.168.3.214/>]>
+2019-06-11 14:24:55,379 ttest3_地址流程.py[line:55] INFO 登录成功
+2019-06-11 14:24:55,399 ttest3_地址流程.py[line:59] INFO 添加地址开始
+2019-06-11 14:24:55,414 ttest3_地址流程.py[line:61] INFO 添加地址请求数据:{'memberName': '15500000000', 'phone': '111111', 'provinceName': 'None', 'cityName': 'None', 'countyName': 'None', 'detailAddress': 'None', 'isDefault': 'None', 'type': 'None'}
+2019-06-11 14:24:55,432 ttest3_地址流程.py[line:64] INFO 添加地址返回数据:<!doctype html><html lang="en"><head><title>HTTP Status 400 – Bad Request</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 – Bad Request</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Description</b> The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).</p><hr class="line" /><h3>Apache Tomcat/8.5.29</h3></body></html>
+2019-06-11 14:24:55,462 ttest3_地址流程.py[line:80] INFO 查询地址开始
+2019-06-11 14:24:55,482 ttest3_地址流程.py[line:82] INFO 请求数据为：http://192.168.3.214:8801/zlead/shopcart/shoppingCartGoods
+2019-06-11 14:24:55,565 ttest3_地址流程.py[line:84] INFO 查询地址返回数据为：{"code":1,"message":"返回购物车信息!","data":[{"goodsList":[{"goodsImg":"http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/7038e72a94d142f4983ba78b86c76beb.jpg","goodsId":3423,"count":1,"isMarketable":1,"facId":35,"shopName":"龙华建材经销公司商城","agentDiscount":0.5,"prodType":0,"thisGoodsModel":"","modelName":"网络特供110","specNames":"19*19","goodsPointPrice":0.00,"goodsPrice":10.00,"thisGoodsAttr":["黄"],"storeName":null,"id":14437,"shopId":710,"stock":10,"goodsName":"金刚石小锯片锋利耐磨云石片波纹型瓷砖大理"}],"shopName":"龙华建材经销公司","facId":{"factory_id":35},"shopId":710},{"goodsList":[{"goodsImg":"http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/791739b0b7cf40aab268e34d07f4237d.jpg","goodsId":3581,"count":9,"isMarketable":1,"facId":42,"shopName":"王猛五金厂","agentDiscount":0.5,"prodType":0,"thisGoodsModel":"","modelName":"DD_00001","specNames":null,"goodsPointPrice":0.00,"goodsPrice":99.00,"thisGoodsAttr":["200M","室内","红"],"storeName":null,"id":14526,"shopId":721,"stock":999999966,"goodsName":"灯灯灯灯灯灯灯"}],"shopName":"王猛五金厂","facId":{"factory_id":42},"shopId":721}],"success":true}
+2019-06-11 14:24:55,702 ttest3_地址流程.py[line:88] INFO 添加地址模块测试结果:用例总数1其中通过用例0条，失败用例0条
+2019-06-11 14:24:55,770 ttest3_添加地址.py[line:22] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/memaddr/addOrUpdateMemberAddress
+
+2019-06-11 14:24:55,814 ttest3_添加地址.py[line:53] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=A22D408C3305D88545F08E667F501EED for 192.168.3.214/>]>
+2019-06-11 14:24:55,857 ttest3_添加地址.py[line:55] INFO 登录成功
+2019-06-11 14:24:55,936 ttest3_添加地址.py[line:60] INFO 第1条用例"添加购物车成功"开始执行
+2019-06-11 14:24:55,962 ttest3_添加地址.py[line:65] INFO 请求数据:{'memberName': '徐徐', 'phone': '13100000000', 'provinceName': '上海市', 'cityName': '市辖区', 'countyName': '黄浦区', 'detailAddress': '泛太平洋大厦', 'isDefault': '1', 'type': '1'}
+2019-06-11 14:24:56,069 ttest3_添加地址.py[line:69] INFO 返回数据:{"code":1,"message":"地址添加成功！","data":"","success":true}
+2019-06-11 14:24:56,163 ttest3_添加地址.py[line:74] INFO 地址添加成功！
+2019-06-11 14:24:56,188 ttest3_添加地址.py[line:79] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-11 14:24:56,205 ttest3_添加地址.py[line:92] INFO 添加地址模块测试结果:用例总数1其中通过用例1条，失败用例0条

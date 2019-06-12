@@ -1,0 +1,12 @@
+2019-06-10 13:21:27,118 txest3_查询购物车.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8802/zlead/shopcart/shoppingCartGoods
+
+2019-06-10 13:21:27,286 txest3_查询购物车.py[line:52] INFO 请求数据:{'code': 1, 'message': '返回购物车信息!', 'data': [{'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/7038e72a94d142f4983ba78b86c76beb.jpg', 'goodsId': 3423, 'count': 1, 'isMarketable': 1, 'facId': 35, 'shopName': '龙华建材经销公司商城', 'agentDiscount': 0.5, 'prodType': 0, 'thisGoodsModel': '', 'modelName': '网络特供110', 'specNames': '19*19', 'goodsPointPrice': 0.0, 'goodsPrice': 10.0, 'thisGoodsAttr': ['黄'], 'storeName': None, 'id': 14437, 'shopId': 710, 'stock': 10, 'goodsName': '金刚石小锯片锋利耐磨云石片波纹型瓷砖大理'}], 'shopName': '龙华建材经销公司', 'facId': {'factory_id': 35}, 'shopId': 710}], 'success': True}
+2019-06-10 13:21:27,375 txest3_查询购物车.py[line:62] INFO 执行SQL查询:SELECT sum(count) from t_shopping_cart where member_id = (SELECT id from t_member where member_id = '15500000000') and is_buy = '0'
+2019-06-10 13:21:27,465 txest3_查询购物车.py[line:67] INFO 查询购物车成功
+2019-06-10 13:21:27,484 txest3_查询购物车.py[line:72] INFO 查看购物车接口测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-10 13:21:36,530 txest3_查询购物车.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8802/zlead/shopcart/shoppingCartGoods
+
+2019-06-10 13:21:36,647 txest3_查询购物车.py[line:52] INFO 请求数据:{'code': 1, 'message': '返回购物车信息!', 'data': [{'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/7038e72a94d142f4983ba78b86c76beb.jpg', 'goodsId': 3423, 'count': 1, 'isMarketable': 1, 'facId': 35, 'shopName': '龙华建材经销公司商城', 'agentDiscount': 0.5, 'prodType': 0, 'thisGoodsModel': '', 'modelName': '网络特供110', 'specNames': '19*19', 'goodsPointPrice': 0.0, 'goodsPrice': 10.0, 'thisGoodsAttr': ['黄'], 'storeName': None, 'id': 14437, 'shopId': 710, 'stock': 10, 'goodsName': '金刚石小锯片锋利耐磨云石片波纹型瓷砖大理'}], 'shopName': '龙华建材经销公司', 'facId': {'factory_id': 35}, 'shopId': 710}], 'success': True}
+2019-06-10 13:21:36,699 txest3_查询购物车.py[line:62] INFO 执行SQL查询:SELECT sum(count) from t_shopping_cart where member_id = (SELECT id from t_member where member_id = '15500000000') and is_buy = '0'
+2019-06-10 13:21:36,738 txest3_查询购物车.py[line:67] INFO 查询购物车成功
+2019-06-10 13:21:36,741 txest3_查询购物车.py[line:72] INFO 查看购物车接口测试结果:用例总数1条，其中通过用例1条，失败用例0条

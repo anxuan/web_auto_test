@@ -1,0 +1,24 @@
+2019-06-10 17:28:15,961 ttest3_提交订单.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8802//zlead/order/addOrder
+
+2019-06-10 17:28:16,040 ttest3_提交订单.py[line:49] INFO 第1条用例"提交订单成功"开始执行
+2019-06-10 17:28:16,090 ttest3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3511', 'buyNum': '1', 'buyType': '0', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-10 17:28:16,149 ttest3_提交订单.py[line:54] INFO 返回数据:{'code': 2, 'message': '', 'data': '', 'success': False}
+2019-06-10 17:28:16,186 ttest3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-10 17:28:16,209 ttest3_提交订单.py[line:68] INFO 第1条用例执行结束，执行结果:失败
+2019-06-10 17:28:16,221 ttest3_提交订单.py[line:49] INFO 第2条用例"提交订单成功"开始执行
+2019-06-10 17:28:16,236 ttest3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3511', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-10 17:28:16,285 ttest3_提交订单.py[line:54] INFO 返回数据:{'code': 1, 'message': '提交订单成功', 'data': {'orderType': 0, 'orderId': 50004662, 'orderSn': '201906103943'}, 'success': True}
+2019-06-10 17:28:16,304 ttest3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-10 17:28:16,323 ttest3_提交订单.py[line:61] INFO 第2条用例执行结束，执行结果:通过!
+
+2019-06-10 17:28:16,351 ttest3_提交订单.py[line:71] INFO 提交订单接口测试结果:用例总数2条，其中通过用例1条，失败用例1条
+2019-06-10 17:28:16,367 ttest3_添加地址.py[line:21] INFO 本次接口测试请求地址为：http://192.168.3.214:8802/zlead/memaddr/addOrUpdateMemberAddress
+
+2019-06-10 17:28:16,367 ttest3_添加地址.py[line:21] INFO 本次接口测试请求地址为：http://192.168.3.214:8802/zlead/memaddr/addOrUpdateMemberAddress
+
+2019-06-10 17:28:16,466 ttest3_添加地址.py[line:52] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=06293DEEF096A6444DDE37F11E88B944 for 192.168.3.214/>]>
+2019-06-10 17:28:16,466 ttest3_添加地址.py[line:52] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=06293DEEF096A6444DDE37F11E88B944 for 192.168.3.214/>]>
+2019-06-10 17:28:16,585 ttest3_添加地址.py[line:54] INFO 登录成功
+2019-06-10 17:28:16,585 ttest3_添加地址.py[line:54] INFO 登录成功
+2019-06-10 17:28:16,631 ttest3_添加地址.py[line:59] INFO 第1条用例"添加购物车成功"开始执行
+2019-06-10 17:28:16,631 ttest3_添加地址.py[line:59] INFO 第1条用例"添加购物车成功"开始执行

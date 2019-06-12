@@ -1,0 +1,29 @@
+2019-06-10 18:24:10,466 ttest3_提交订单.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8802//zlead/order/addOrder
+
+2019-06-10 18:24:10,554 ttest3_提交订单.py[line:49] INFO 第1条用例"提交订单成功"开始执行
+2019-06-10 18:24:10,629 ttest3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3511', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-10 18:24:10,671 ttest3_提交订单.py[line:54] INFO 返回数据:{'code': 4, 'message': '库存不足，无法购买', 'data': '', 'success': False}
+2019-06-10 18:24:10,699 ttest3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-10 18:24:10,725 ttest3_提交订单.py[line:68] INFO 第1条用例执行结束，执行结果:失败
+2019-06-10 18:24:10,738 ttest3_提交订单.py[line:49] INFO 第2条用例"提交订单成功"开始执行
+2019-06-10 18:24:10,750 ttest3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3511', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-10 18:24:10,781 ttest3_提交订单.py[line:54] INFO 返回数据:{'code': 4, 'message': '库存不足，无法购买', 'data': '', 'success': False}
+2019-06-10 18:24:10,801 ttest3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-10 18:24:10,817 ttest3_提交订单.py[line:68] INFO 第2条用例执行结束，执行结果:失败
+2019-06-10 18:24:10,830 ttest3_提交订单.py[line:71] INFO 提交订单接口测试结果:用例总数1条，其中通过用例0条，失败用例1条
+2019-06-10 18:24:10,848 ttest3_添加地址.py[line:22] INFO 本次接口测试请求地址为：http://192.168.3.214:8802/zlead/memaddr/addOrUpdateMemberAddress
+
+2019-06-10 18:24:10,848 ttest3_添加地址.py[line:22] INFO 本次接口测试请求地址为：http://192.168.3.214:8802/zlead/memaddr/addOrUpdateMemberAddress
+
+2019-06-10 18:24:10,949 ttest3_添加地址.py[line:53] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=129C8E45192CFFC51B6BC9156DC19BF2 for 192.168.3.214/>]>
+2019-06-10 18:24:10,949 ttest3_添加地址.py[line:53] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=129C8E45192CFFC51B6BC9156DC19BF2 for 192.168.3.214/>]>
+2019-06-10 18:24:11,040 ttest3_添加地址.py[line:55] INFO 登录成功
+2019-06-10 18:24:11,040 ttest3_添加地址.py[line:55] INFO 登录成功
+2019-06-10 18:24:11,095 ttest3_添加地址.py[line:60] INFO 第1条用例"添加购物车成功"开始执行
+2019-06-10 18:24:11,095 ttest3_添加地址.py[line:60] INFO 第1条用例"添加购物车成功"开始执行
+2019-06-10 18:24:11,124 ttest3_添加地址.py[line:64] INFO 请求数据:{'memberName': 'a15841de6372a6c93d68d9e9f606de42', 'phone': '13100000000', 'provinceName': 'b6733429b6ef0f1459b770ed8f45b936', 'cityName': '83fd8b5e39bf67d2453a37ceb9384a10', 'countyName': '4a6b98f417a5a7e4557d9ff1ce4527dd', 'detailAddress': '83fd8b5e39bf67d2453a37ceb9384a10', 'isDefault': '1', 'type': '1'}
+2019-06-10 18:24:11,124 ttest3_添加地址.py[line:64] INFO 请求数据:{'memberName': 'a15841de6372a6c93d68d9e9f606de42', 'phone': '13100000000', 'provinceName': 'b6733429b6ef0f1459b770ed8f45b936', 'cityName': '83fd8b5e39bf67d2453a37ceb9384a10', 'countyName': '4a6b98f417a5a7e4557d9ff1ce4527dd', 'detailAddress': '83fd8b5e39bf67d2453a37ceb9384a10', 'isDefault': '1', 'type': '1'}
+2019-06-10 18:24:11,170 ttest3_添加地址.py[line:68] INFO 返回数据:{"code":2,"message":"传入的省市县有误","data":"","success":false}
+2019-06-10 18:24:11,170 ttest3_添加地址.py[line:68] INFO 返回数据:{"code":2,"message":"传入的省市县有误","data":"","success":false}
+2019-06-10 18:24:11,208 ttest3_添加地址.py[line:112] INFO 加入购物车模块测试结果:用例总数1其中通过用例0条，失败用例0条
+2019-06-10 18:24:11,208 ttest3_添加地址.py[line:112] INFO 加入购物车模块测试结果:用例总数1其中通过用例0条，失败用例0条

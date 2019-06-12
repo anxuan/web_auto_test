@@ -1,0 +1,39 @@
+2019-06-10 17:22:21,623 ttest3_提交订单.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8802//zlead/order/addOrder
+
+2019-06-10 17:22:21,694 ttest3_提交订单.py[line:49] INFO 第1条用例"提交订单成功"开始执行
+2019-06-10 17:22:21,732 ttest3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3511', 'buyNum': '1', 'buyType': '-1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-10 17:22:21,756 ttest3_提交订单.py[line:54] INFO 返回数据:{'code': 2, 'message': '', 'data': '', 'success': False}
+2019-06-10 17:22:21,769 ttest3_添加地址.py[line:21] INFO 本次接口测试请求地址为：http://192.168.3.214:8802/zlead/memaddr/addOrUpdateMemberAddress
+
+2019-06-10 17:22:21,769 ttest3_添加地址.py[line:21] INFO 本次接口测试请求地址为：http://192.168.3.214:8802/zlead/memaddr/addOrUpdateMemberAddress
+
+2019-06-10 17:22:21,853 ttest3_添加地址.py[line:52] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=4AA4B68CD345A184FF61D24F2BFEC7FA for 192.168.3.214/>]>
+2019-06-10 17:22:21,853 ttest3_添加地址.py[line:52] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=4AA4B68CD345A184FF61D24F2BFEC7FA for 192.168.3.214/>]>
+2019-06-10 17:22:21,900 ttest3_添加地址.py[line:54] INFO 登录成功
+2019-06-10 17:22:21,900 ttest3_添加地址.py[line:54] INFO 登录成功
+2019-06-10 17:22:21,961 ttest3_添加地址.py[line:59] INFO 第1条用例"添加购物车成功"开始执行
+2019-06-10 17:22:21,961 ttest3_添加地址.py[line:59] INFO 第1条用例"添加购物车成功"开始执行
+2019-06-10 17:22:35,499 ttest3_提交订单.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8802//zlead/order/addOrder
+
+2019-06-10 17:22:35,579 ttest3_提交订单.py[line:49] INFO 第1条用例"提交订单成功"开始执行
+2019-06-10 17:22:35,655 ttest3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3511', 'buyNum': '1', 'buyType': '-1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-10 17:22:35,685 ttest3_提交订单.py[line:54] INFO 返回数据:{'code': 2, 'message': '', 'data': '', 'success': False}
+2019-06-10 17:22:35,702 ttest3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-10 17:22:35,718 ttest3_提交订单.py[line:68] INFO 第1条用例执行结束，执行结果:失败
+2019-06-10 17:22:35,730 ttest3_提交订单.py[line:49] INFO 第2条用例"提交订单成功"开始执行
+2019-06-10 17:22:35,743 ttest3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3511', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-10 17:22:35,865 ttest3_提交订单.py[line:54] INFO 返回数据:{'code': 1, 'message': '提交订单成功', 'data': {'orderType': 0, 'orderId': 50004661, 'orderSn': '201906109822'}, 'success': True}
+2019-06-10 17:22:35,927 ttest3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-10 17:22:35,954 ttest3_提交订单.py[line:61] INFO 第2条用例执行结束，执行结果:通过!
+
+2019-06-10 17:22:35,984 ttest3_提交订单.py[line:71] INFO 提交订单接口测试结果:用例总数2条，其中通过用例1条，失败用例1条
+2019-06-10 17:22:36,001 ttest3_添加地址.py[line:21] INFO 本次接口测试请求地址为：http://192.168.3.214:8802/zlead/memaddr/addOrUpdateMemberAddress
+
+2019-06-10 17:22:36,001 ttest3_添加地址.py[line:21] INFO 本次接口测试请求地址为：http://192.168.3.214:8802/zlead/memaddr/addOrUpdateMemberAddress
+
+2019-06-10 17:22:36,103 ttest3_添加地址.py[line:52] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=3C68629C90893BEE8A4ECA0F55D91FB5 for 192.168.3.214/>]>
+2019-06-10 17:22:36,103 ttest3_添加地址.py[line:52] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=3C68629C90893BEE8A4ECA0F55D91FB5 for 192.168.3.214/>]>
+2019-06-10 17:22:36,194 ttest3_添加地址.py[line:54] INFO 登录成功
+2019-06-10 17:22:36,194 ttest3_添加地址.py[line:54] INFO 登录成功
+2019-06-10 17:22:36,236 ttest3_添加地址.py[line:59] INFO 第1条用例"添加购物车成功"开始执行
+2019-06-10 17:22:36,236 ttest3_添加地址.py[line:59] INFO 第1条用例"添加购物车成功"开始执行

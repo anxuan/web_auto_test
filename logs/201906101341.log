@@ -1,0 +1,6 @@
+2019-06-10 13:41:34,740 ttest2_登录_工厂PC端.py[line:22] INFO 本次接口测试请求地址为：http://192.168.3.214:8803//zlead/login.do
+
+2019-06-10 13:41:34,792 ttest2_登录_工厂PC端.py[line:45] INFO 登录URL：http://192.168.3.214:8803//zlead/login.do
+2019-06-10 13:41:34,818 ttest2_登录_工厂PC端.py[line:49] INFO 第1条用例"用户名和密码正确"开始执行
+2019-06-10 13:41:34,829 ttest2_登录_工厂PC端.py[line:51] INFO 请求数据:{'loginName': '12345678901', 'userPwd': '96e79218965eb72c92a549dd5a330112', 'tid': '956c073f48a24416acf21641112588ff', 'rdmCode': ''}
+2019-06-10 13:41:34,861 ttest2_登录_工厂PC端.py[line:53] INFO 返回数据:{'state': True, 'data': '36762a1f8b07d8615a1de407bd58450b13856922'}

@@ -1,0 +1,6 @@
+2019-06-11 14:00:25,093 ttest3_地址流程.py[line:53] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=AA5E828180B2B6D26B439BBAD872C3AE for 192.168.3.214/>]>
+2019-06-11 14:00:25,104 ttest3_地址流程.py[line:55] INFO 登录成功
+2019-06-11 14:00:25,116 ttest3_地址流程.py[line:59] INFO 添加地址开始
+2019-06-11 14:00:58,704 ttest3_地址流程.py[line:53] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=51067EBA6C87E5CC0AB47DC3348EFDB4 for 192.168.3.214/>]>
+2019-06-11 14:00:58,719 ttest3_地址流程.py[line:55] INFO 登录成功
+2019-06-11 14:00:58,732 ttest3_地址流程.py[line:59] INFO 添加地址开始

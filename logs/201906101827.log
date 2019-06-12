@@ -1,0 +1,26 @@
+2019-06-10 18:27:08,542 ttest3_提交订单.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8802//zlead/order/addOrder
+
+2019-06-10 18:27:08,630 ttest3_提交订单.py[line:49] INFO 第1条用例"提交订单成功"开始执行
+2019-06-10 18:27:08,685 ttest3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3511', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-10 18:27:08,726 ttest3_提交订单.py[line:54] INFO 返回数据:{'code': 4, 'message': '库存不足，无法购买', 'data': '', 'success': False}
+2019-06-10 18:27:08,744 ttest3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-10 18:27:08,761 ttest3_提交订单.py[line:68] INFO 第1条用例执行结束，执行结果:失败
+2019-06-10 18:27:08,774 ttest3_提交订单.py[line:49] INFO 第2条用例"提交订单成功"开始执行
+2019-06-10 18:27:08,786 ttest3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3511', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-10 18:27:08,818 ttest3_提交订单.py[line:54] INFO 返回数据:{'code': 4, 'message': '库存不足，无法购买', 'data': '', 'success': False}
+2019-06-10 18:27:08,838 ttest3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-10 18:27:08,854 ttest3_提交订单.py[line:68] INFO 第2条用例执行结束，执行结果:失败
+2019-06-10 18:27:08,867 ttest3_提交订单.py[line:71] INFO 提交订单接口测试结果:用例总数1条，其中通过用例0条，失败用例1条
+2019-06-10 18:27:54,168 ttest3_提交订单.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8802//zlead/order/addOrder
+
+2019-06-10 18:27:54,249 ttest3_提交订单.py[line:49] INFO 第1条用例"提交订单成功"开始执行
+2019-06-10 18:27:54,317 ttest3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3511', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-10 18:27:54,360 ttest3_提交订单.py[line:54] INFO 返回数据:{'code': 4, 'message': '库存不足，无法购买', 'data': '', 'success': False}
+2019-06-10 18:27:54,376 ttest3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-10 18:27:54,391 ttest3_提交订单.py[line:68] INFO 第1条用例执行结束，执行结果:失败
+2019-06-10 18:27:54,401 ttest3_提交订单.py[line:49] INFO 第2条用例"提交订单成功"开始执行
+2019-06-10 18:27:54,414 ttest3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3511', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-10 18:27:54,447 ttest3_提交订单.py[line:54] INFO 返回数据:{'code': 4, 'message': '库存不足，无法购买', 'data': '', 'success': False}
+2019-06-10 18:27:54,465 ttest3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-10 18:27:54,481 ttest3_提交订单.py[line:68] INFO 第2条用例执行结束，执行结果:失败
+2019-06-10 18:27:54,493 ttest3_提交订单.py[line:71] INFO 提交订单接口测试结果:用例总数1条，其中通过用例0条，失败用例1条

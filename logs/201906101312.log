@@ -1,0 +1,57 @@
+2019-06-10 13:12:42,578 ttest2_登录_商城端.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8802/zlead/member/login
+
+2019-06-10 13:12:42,588 ttest2_登录_商城端.py[line:40] INFO 第1条用例"用户名和密码正确"开始执行
+2019-06-10 13:12:42,590 ttest2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000000', 'password': '111111'}
+2019-06-10 13:12:42,657 ttest2_登录_商城端.py[line:44] INFO 返回数据:{'code': 1, 'message': '登录成功', 'data': {'headImg': None, 'memberType': 3, 'memberId': 2723, 'username': '15500000000'}, 'success': True}
+2019-06-10 13:12:42,736 ttest2_登录_商城端.py[line:51] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-10 13:12:42,740 ttest2_登录_商城端.py[line:40] INFO 第2条用例"用户名错误"开始执行
+2019-06-10 13:12:42,744 ttest2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000001', 'password': '111111'}
+2019-06-10 13:12:42,810 ttest2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '登录用户不存在', 'data': '', 'success': False}
+2019-06-10 13:12:42,888 ttest2_登录_商城端.py[line:51] INFO 第2条用例执行结束，执行结果:通过!
+
+2019-06-10 13:12:42,919 ttest2_登录_商城端.py[line:40] INFO 第3条用例"密码错误"开始执行
+2019-06-10 13:12:42,939 ttest2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000000', 'password': '111112'}
+2019-06-10 13:12:43,015 ttest2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '用户名或密码错误', 'data': '', 'success': False}
+2019-06-10 13:12:43,095 ttest2_登录_商城端.py[line:51] INFO 第3条用例执行结束，执行结果:通过!
+
+2019-06-10 13:12:43,112 ttest2_登录_商城端.py[line:40] INFO 第4条用例"用户名为10位"开始执行
+2019-06-10 13:12:43,124 ttest2_登录_商城端.py[line:42] INFO 请求数据:{'account': '1550010000', 'password': '111111'}
+2019-06-10 13:12:43,198 ttest2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '登录用户不存在', 'data': '', 'success': False}
+2019-06-10 13:12:43,295 ttest2_登录_商城端.py[line:51] INFO 第4条用例执行结束，执行结果:通过!
+
+2019-06-10 13:12:43,309 ttest2_登录_商城端.py[line:40] INFO 第5条用例"用户名为11位"开始执行
+2019-06-10 13:12:43,323 ttest2_登录_商城端.py[line:42] INFO 请求数据:{'account': '155000000000', 'password': '111111'}
+2019-06-10 13:12:43,400 ttest2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '登录用户不存在', 'data': '', 'success': False}
+2019-06-10 13:12:43,508 ttest2_登录_商城端.py[line:51] INFO 第5条用例执行结束，执行结果:通过!
+
+2019-06-10 13:12:43,523 ttest2_登录_商城端.py[line:40] INFO 第6条用例"用户名为空"开始执行
+2019-06-10 13:12:43,535 ttest2_登录_商城端.py[line:42] INFO 请求数据:{'account': 'None', 'password': '111111'}
+2019-06-10 13:12:43,611 ttest2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '登录用户不存在', 'data': '', 'success': False}
+2019-06-10 13:12:43,714 ttest2_登录_商城端.py[line:51] INFO 第6条用例执行结束，执行结果:通过!
+
+2019-06-10 13:12:43,728 ttest2_登录_商城端.py[line:40] INFO 第7条用例"密码为空"开始执行
+2019-06-10 13:12:43,741 ttest2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000000', 'password': 'None'}
+2019-06-10 13:12:43,819 ttest2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '用户名或密码错误', 'data': '', 'success': False}
+2019-06-10 13:12:43,906 ttest2_登录_商城端.py[line:51] INFO 第7条用例执行结束，执行结果:通过!
+
+2019-06-10 13:12:43,919 ttest2_登录_商城端.py[line:40] INFO 第8条用例"用户名和密码正确"开始执行
+2019-06-10 13:12:43,933 ttest2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000000', 'password': '111111'}
+2019-06-10 13:12:44,013 ttest2_登录_商城端.py[line:44] INFO 返回数据:{'code': 1, 'message': '登录成功', 'data': {'headImg': None, 'memberType': 3, 'memberId': 2723, 'username': '15500000000'}, 'success': True}
+2019-06-10 13:12:44,089 ttest2_登录_商城端.py[line:51] INFO 第8条用例执行结束，执行结果:通过!
+
+2019-06-10 13:12:44,104 ttest2_登录_商城端.py[line:59] INFO 登录接口测试结果:用例总数8条，其中通过用例8条，失败用例0条
+2019-06-10 13:12:44,120 ttest2_登录_工厂PC端.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8803//zlead/isShowRdm.do?loginName=
+
+2019-06-10 13:12:44,120 ttest2_登录_工厂PC端.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8803//zlead/isShowRdm.do?loginName=
+
+2019-06-10 13:12:44,216 ttest2_登录_工厂PC端.py[line:45] INFO 第1条用例"用户名和密码正确"开始执行
+2019-06-10 13:12:44,216 ttest2_登录_工厂PC端.py[line:45] INFO 第1条用例"用户名和密码正确"开始执行
+2019-06-10 13:12:44,243 ttest2_登录_工厂PC端.py[line:47] INFO 请求数据:{'loginName': '12345678901', 'userPwd': '111111', 'tid': 'ccee33b19fb84f8cb138a00ab7b4e030', 'rdmCode': ''}
+2019-06-10 13:12:44,243 ttest2_登录_工厂PC端.py[line:47] INFO 请求数据:{'loginName': '12345678901', 'userPwd': '111111', 'tid': 'ccee33b19fb84f8cb138a00ab7b4e030', 'rdmCode': ''}
+2019-06-10 13:12:44,281 ttest2_登录_工厂PC端.py[line:49] INFO 返回数据:{'state': False, 'data': '80e7cfd617c741ca925071ce47e57289'}
+2019-06-10 13:12:44,281 ttest2_登录_工厂PC端.py[line:49] INFO 返回数据:{'state': False, 'data': '80e7cfd617c741ca925071ce47e57289'}
+2019-06-10 13:12:44,318 ttest2_登录_工厂PC端.py[line:61] INFO 第1条用例执行结束，执行结果:失败
+2019-06-10 13:12:44,318 ttest2_登录_工厂PC端.py[line:61] INFO 第1条用例执行结束，执行结果:失败
+2019-06-10 13:12:44,351 ttest2_登录_工厂PC端.py[line:64] INFO 登录接口测试结果:用例总数1条，其中通过用例0条，失败用例1条
+2019-06-10 13:12:44,351 ttest2_登录_工厂PC端.py[line:64] INFO 登录接口测试结果:用例总数1条，其中通过用例0条，失败用例1条
