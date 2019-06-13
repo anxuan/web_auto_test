@@ -26,11 +26,12 @@ def creatsuite():
     return discover
 
 #discover 方法筛选出来的用例，循环添加到测试套件中
+
+#ttt
     for test_case in discover:
         print(test_case)
         testunit.addTests(test_case)
     return testunit
-
 if __name__ == "__main__":
     runner = unittest.TextTestRunner()
     runner.run(creatsuite())
