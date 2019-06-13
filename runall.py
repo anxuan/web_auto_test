@@ -10,6 +10,10 @@ email_path = os.path.join(os.getcwd(), "common")
 
 sys.path.append(email_path)
 print(sys.path)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8400c1fce91249948c13240b8074b40f11bd4263
 report_file = os.path.join(report_path,'report.txt')
 if 'report.txt' in os.listdir(report_path):
     os.remove(report_file)
