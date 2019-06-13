@@ -10,7 +10,6 @@ email_path = os.path.join(os.getcwd(), "common")
 
 sys.path.append(email_path)
 print(sys.path)
-
 report_file = os.path.join(report_path,'report.txt')
 if 'report.txt' in os.listdir(report_path):
     os.remove(report_file)
@@ -26,12 +25,11 @@ def creatsuite():
     return discover
 
 #discover 方法筛选出来的用例，循环添加到测试套件中
-
-#ttt
     for test_case in discover:
         print(test_case)
         testunit.addTests(test_case)
     return testunit
+
 if __name__ == "__main__":
     runner = unittest.TextTestRunner()
     runner.run(creatsuite())

@@ -1,0 +1,15 @@
+2019-06-12 16:06:24,244 ttest3_上传凭证.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8801//zlead/order/addOrder
+
+2019-06-12 16:06:24,290 ttest3_上传凭证.py[line:49] INFO 第1条用例"提交订单成功"开始执行
+2019-06-12 16:06:24,305 ttest3_上传凭证.py[line:52] INFO 请求数据:{'goodsId': '3581', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-12 16:06:24,364 ttest3_上传凭证.py[line:54] INFO 返回数据:{'code': 1, 'message': '提交订单成功', 'data': {'orderType': 0, 'orderId': 50004734, 'orderSn': '201906124898'}, 'success': True}
+2019-06-12 16:06:24,404 ttest3_上传凭证.py[line:57] INFO 预期结果：提交订单成功
+2019-06-12 16:06:24,427 ttest3_上传凭证.py[line:61] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-12 16:06:24,456 ttest3_上传凭证.py[line:49] INFO 第2条用例"提交订单成功"开始执行
+2019-06-12 16:06:24,468 ttest3_上传凭证.py[line:52] INFO 请求数据:{'goodsId': '3581', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-12 16:06:24,547 ttest3_上传凭证.py[line:54] INFO 返回数据:{'code': 1, 'message': '提交订单成功', 'data': {'orderType': 0, 'orderId': 50004735, 'orderSn': '201906126161'}, 'success': True}
+2019-06-12 16:06:24,640 ttest3_上传凭证.py[line:57] INFO 预期结果：提交订单成功
+2019-06-12 16:06:24,659 ttest3_上传凭证.py[line:61] INFO 第2条用例执行结束，执行结果:通过!
+
+2019-06-12 16:06:24,689 ttest3_上传凭证.py[line:71] INFO 提交订单接口测试结果:用例总数1条，其中通过用例1条，失败用例0条

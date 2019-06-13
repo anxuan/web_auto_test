@@ -66,7 +66,7 @@ class test_login:
                 self.data.save(self.real_path)
                 mylogger.info("第"+str(i)+"条用例执行结束，执行结果:失败")
                 fail_count=+1
-        content = ('''<tr><td>登录</td><td>'''+str(pass_count+fail_count)+'''</td><td>'''+str(pass_count)+'''</td><td>'''+str(fail_count)+'''</td></tr>''')
+        content = ('''<tr><td>登录工厂端</td><td>'''+str(pass_count+fail_count)+'''</td><td>'''+str(pass_count)+'''</td><td>'''+str(fail_count)+'''</td></tr>''')
         mylogger.info("登录接口测试结果:用例总数"+str(pass_count+fail_count)+"条，其中通过用例"+str(pass_count)+"条，失败用例"+str(fail_count)+'条')
         report(content).write_file()
             

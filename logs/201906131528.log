@@ -1,0 +1,348 @@
+2019-06-13 15:28:18,106 test1_注册.py[line:16] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/member/registered
+
+2019-06-13 15:28:18,175 test1_注册.py[line:38] INFO 第1条用例"用户名和密码正确"开始执行
+2019-06-13 15:28:18,245 test1_注册.py[line:41] INFO 请求数据:{'phone': '19612121211', 'passWord': '111111', 'companyName': 'test', 'verifyCode': '111111'}
+2019-06-13 15:28:18,321 test1_注册.py[line:44] INFO 返回数据:{'code': 2, 'message': '验证码校验失败', 'data': '', 'success': False}
+2019-06-13 15:28:18,400 test1_注册.py[line:53] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:18,413 test1_注册.py[line:60] INFO 登录接口测试结果:用例总数[1]条，其中通过用例[1]条，失败用例[]条
+2019-06-13 15:28:18,440 test2_登录_商城端.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/member/login
+
+2019-06-13 15:28:18,495 test2_登录_商城端.py[line:40] INFO 第1条用例"用户名和密码正确"开始执行
+2019-06-13 15:28:18,507 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000000', 'password': '111111'}
+2019-06-13 15:28:18,527 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 1, 'message': '登录成功', 'data': {'headImg': None, 'memberType': 3, 'memberId': 2723, 'username': '15500000000'}, 'success': True}
+2019-06-13 15:28:18,552 test2_登录_商城端.py[line:51] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:18,567 test2_登录_商城端.py[line:40] INFO 第2条用例"用户名错误"开始执行
+2019-06-13 15:28:18,585 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000001', 'password': '111111'}
+2019-06-13 15:28:18,609 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '登录用户不存在', 'data': '', 'success': False}
+2019-06-13 15:28:18,634 test2_登录_商城端.py[line:51] INFO 第2条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:18,651 test2_登录_商城端.py[line:40] INFO 第3条用例"密码错误"开始执行
+2019-06-13 15:28:18,665 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000000', 'password': '111112'}
+2019-06-13 15:28:18,686 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '密码错误', 'data': '', 'success': False}
+2019-06-13 15:28:18,711 test2_登录_商城端.py[line:51] INFO 第3条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:18,726 test2_登录_商城端.py[line:40] INFO 第4条用例"用户名为10位"开始执行
+2019-06-13 15:28:18,740 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '1550010000', 'password': '111111'}
+2019-06-13 15:28:18,761 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '登录用户不存在', 'data': '', 'success': False}
+2019-06-13 15:28:18,787 test2_登录_商城端.py[line:51] INFO 第4条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:18,802 test2_登录_商城端.py[line:40] INFO 第5条用例"用户名为11位"开始执行
+2019-06-13 15:28:18,820 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '155000000000', 'password': '111111'}
+2019-06-13 15:28:18,841 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '登录用户不存在', 'data': '', 'success': False}
+2019-06-13 15:28:18,866 test2_登录_商城端.py[line:51] INFO 第5条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:18,882 test2_登录_商城端.py[line:40] INFO 第6条用例"用户名为空"开始执行
+2019-06-13 15:28:18,898 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': 'None', 'password': '111111'}
+2019-06-13 15:28:18,919 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '登录用户不存在', 'data': '', 'success': False}
+2019-06-13 15:28:18,944 test2_登录_商城端.py[line:51] INFO 第6条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:18,961 test2_登录_商城端.py[line:40] INFO 第7条用例"密码为空"开始执行
+2019-06-13 15:28:18,975 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000000', 'password': 'None'}
+2019-06-13 15:28:18,997 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '密码错误', 'data': '', 'success': False}
+2019-06-13 15:28:19,023 test2_登录_商城端.py[line:51] INFO 第7条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:19,039 test2_登录_商城端.py[line:40] INFO 第8条用例"用户名和密码正确"开始执行
+2019-06-13 15:28:19,054 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000000', 'password': '111111'}
+2019-06-13 15:28:19,078 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 1, 'message': '登录成功', 'data': {'headImg': None, 'memberType': 3, 'memberId': 2723, 'username': '15500000000'}, 'success': True}
+2019-06-13 15:28:19,107 test2_登录_商城端.py[line:51] INFO 第8条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:19,123 test2_登录_商城端.py[line:59] INFO 登录接口测试结果:用例总数8条，其中通过用例8条，失败用例0条
+2019-06-13 15:28:19,139 test2_登录_工厂PC端.py[line:22] INFO 本次接口测试请求地址为：http://192.168.3.214:8803//zlead/login.do
+
+2019-06-13 15:28:19,209 test2_登录_工厂PC端.py[line:45] INFO 登录URL：http://192.168.3.214:8803//zlead/login.do
+2019-06-13 15:28:19,241 test2_登录_工厂PC端.py[line:49] INFO 第1条用例"用户名和密码正确"开始执行
+2019-06-13 15:28:19,257 test2_登录_工厂PC端.py[line:51] INFO 请求数据:{'loginName': '12345678901', 'userPwd': '96e79218965eb72c92a549dd5a330112', 'tid': '4e1309bbe1714aceb6350e48ddacca1a', 'rdmCode': ''}
+2019-06-13 15:28:19,309 test2_登录_工厂PC端.py[line:53] INFO 返回数据:{'state': True, 'data': 'd2434162af27c12f67e11e451b3b1a7c1dcf0612'}
+2019-06-13 15:28:19,329 test2_登录_工厂PC端.py[line:57] INFO True
+2019-06-13 15:28:19,344 test2_登录_工厂PC端.py[line:58] INFO True
+2019-06-13 15:28:19,362 test2_登录_工厂PC端.py[line:62] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:19,378 test2_登录_工厂PC端.py[line:70] INFO 登录接口测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:28:19,430 test3_上传凭证.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8801//zlead/order/addOrder
+
+2019-06-13 15:28:19,464 test3_上传凭证.py[line:49] INFO 第1条用例"提交订单成功"开始执行
+2019-06-13 15:28:19,477 test3_上传凭证.py[line:52] INFO 请求数据:{'goodsId': '3581', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-13 15:28:19,532 test3_上传凭证.py[line:54] INFO 返回数据:{'code': 1, 'message': '提交订单成功', 'data': {'orderType': 0, 'orderId': 50004764, 'orderSn': '201906138942'}, 'success': True}
+2019-06-13 15:28:19,554 test3_上传凭证.py[line:57] INFO 预期结果：提交订单成功
+2019-06-13 15:28:19,573 test3_上传凭证.py[line:62] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:19,587 test3_上传凭证.py[line:72] INFO 添加凭证请求数据:{'amount': '11', 'img': 'http://139.224.113.24/group1/M00/00/06/rBN_h10As6SAYuhoAAEMazy6pHc589.jpg', 'payType': '1', 'payTime': '2019/06/12', 'payRemar': '11', 'orderIds': 50004764}
+2019-06-13 15:28:19,638 test3_上传凭证.py[line:76] INFO 添加凭证成功
+2019-06-13 15:28:19,654 test3_上传凭证.py[line:82] INFO 登录、提交订单、上传凭证流程测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:28:19,671 test3_发送验证码.py[line:18] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/member/sendVerifyCode
+
+2019-06-13 15:28:19,693 test3_发送验证码.py[line:39] INFO 第1条用例"发送验证码成功"执行开始
+2019-06-13 15:28:19,710 test3_发送验证码.py[line:41] INFO 发出请求数据：http://192.168.3.214:8801/zlead/member/sendVerifyCode{'phone': '15500000000'}
+2019-06-13 15:28:20,033 test3_发送验证码.py[line:43] INFO 返回请求数据：{'code': 1, 'message': '验证码发送成功', 'data': '', 'success': True}
+2019-06-13 15:28:20,088 test3_发送验证码.py[line:47] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:20,108 test3_发送验证码.py[line:55] INFO 发送验证码接口测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:28:20,133 test3_地址流程.py[line:33] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=1588C47F5D84BF9DA5B20E8D48AF023D for 192.168.3.214/>]>
+2019-06-13 15:28:20,150 test3_地址流程.py[line:35] INFO 登录成功
+2019-06-13 15:28:20,164 test3_地址流程.py[line:39] INFO 添加地址开始
+2019-06-13 15:28:20,179 test3_地址流程.py[line:41] INFO 添加地址请求数据:{'memberName': 'testxu', 'phone': '1311111111', 'provinceName': '上海市', 'cityName': '市辖区', 'countyName': '黄浦区', 'detailAddress': '泛太平洋大厦', 'isDefault': 1, 'type': 1}
+2019-06-13 15:28:20,244 test3_地址流程.py[line:44] INFO 添加地址返回数据:{"code":1,"message":"地址添加成功！","data":"","success":true}
+2019-06-13 15:28:20,261 test3_地址流程.py[line:46] INFO 添加地址结束，测试结果为：成功
+2019-06-13 15:28:20,277 test3_地址流程.py[line:64] INFO 查询地址开始
+2019-06-13 15:28:20,294 test3_地址流程.py[line:66] INFO 请求数据为：http://192.168.3.214:8801/zlead/memaddr/getAllAgentAddress
+2019-06-13 15:28:20,342 test3_地址流程.py[line:68] INFO 查询地址返回数据为：{'code': 1, 'message': '地址列表', 'data': {'0': [{'id': 2076, 'memberId': 2723, 'memberName': 'testxu', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 1, 'isFact': 0, 'factId': 0, 'factName': '', 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 1046, 'memberId': 2723, 'memberName': '赵敏敏', 'phone': '15500000000', 'address': '订单', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '河北省', 'cityName': '石家庄市', 'regionName': '灵寿县'}, {'id': 1080, 'memberId': 2723, 'memberName': '张三丰', 'phone': '18662467587', 'address': '北京西路', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 1255, 'memberId': 2723, 'memberName': '袁文', 'phone': '18662467587', 'address': '对对对', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '县', 'regionName': '崇明县'}, {'id': 1258, 'memberId': 2723, 'memberName': '涣汗大号11111111111111111111111111111111111111111111111111111111111111111111111111111111', 'phone': '15516779923', 'address': '订单', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '广东省', 'cityName': '广州市', 'regionName': '市辖区'}, {'id': 1282, 'memberId': 2723, 'memberName': '与UU回家结婚回家就看呵呵姐姐姐姐姐姐姐姐姐姐姐姐姐姐姐姐家', 'phone': '15555555555', 'address': '订单', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '湖南省', 'cityName': '长沙市', 'regionName': '市辖区'}, {'id': 1398, 'memberId': 2723, 'memberName': 'sdddddddddddddddddddddddddddddfffffffffffffffffffffffffffffffff', 'phone': '15555555555', 'address': '对对对', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '河南省', 'cityName': '郑州市', 'regionName': '市辖区'}, {'id': 1399, 'memberId': 2723, 'memberName': 'sdddddddddddddddddddddddddddddfffffffffffffffffffffffffffffffff', 'phone': '15555555555', 'address': '对对对', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '河南省', 'cityName': '郑州市', 'regionName': '市辖区'}, {'id': 1428, 'memberId': 2723, 'memberName': 'vfffffffff', 'phone': '11554455555', 'address': 'fffff', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '湖北省', 'cityName': '武汉市', 'regionName': '市辖区'}, {'id': 1451, 'memberId': 2723, 'memberName': '对对对大大大大大大大', 'phone': '11111111111', 'address': '对对对大大大大大大大大大大大大大大大大大', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '湖南省', 'cityName': '长沙市', 'regionName': '市辖区'}, {'id': 1637, 'memberId': 2723, 'memberName': '徐培庆', 'phone': '17621463842', 'address': 'dsafsafdsaf', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '北京市', 'cityName': '市辖区', 'regionName': '东城区'}, {'id': 2055, 'memberId': 2723, 'memberName': 'testxu1', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 2067, 'memberId': 2723, 'memberName': 'testxu', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 2069, 'memberId': 2723, 'memberName': 'testxu', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 2071, 'memberId': 2723, 'memberName': 'testxu', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 2074, 'memberId': 2723, 'memberName': 'testxu', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 2075, 'memberId': 2723, 'memberName': '徐徐', 'phone': '13100000000', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}], '42': [{'id': 1545, 'memberId': 2723, 'memberName': '老赵', 'phone': '15500000000', 'address': '问问', 'isDefault': 0, 'isFact': 1, 'factId': 42, 'factName': '王猛五金厂', 'provinceName': '北京市', 'cityName': '县', 'regionName': '密云县'}], '43': [{'id': 1694, 'memberId': 2723, 'memberName': '', 'phone': '', 'address': '果皮', 'isDefault': 0, 'isFact': 1, 'factId': 43, 'factName': '施勤丰五金厂', 'provinceName': '天津市', 'cityName': '市辖区', 'regionName': '和平区'}]}, 'success': True}
+2019-06-13 15:28:20,708 test3_地址流程.py[line:70] INFO 查询地址结束，测试结果为：成功
+2019-06-13 15:28:21,032 test3_地址流程.py[line:77] INFO 更新地址开始
+2019-06-13 15:28:21,196 test3_地址流程.py[line:79] INFO 更新地址请求数据:{'addressId': 2075, 'memberName': 'testxu1', 'phone': '1311111111', 'provinceName': '上海市', 'cityName': '市辖区', 'countyName': '黄浦区', 'detailAddress': '泛太平洋大厦', 'isDefault': 1, 'type': 2}
+2019-06-13 15:28:21,457 test3_地址流程.py[line:81] INFO 更新地址返回数据为：{"code":1,"message":"地址修改成功！","data":"","success":true}
+2019-06-13 15:28:21,686 test3_地址流程.py[line:83] INFO 更新地址结束，测试结果为：成功
+2019-06-13 15:28:21,865 test3_地址流程.py[line:89] INFO 删除地址开始
+2019-06-13 15:28:21,965 test3_地址流程.py[line:92] INFO 删除地址返回数据：{'code': 1, 'message': '地址删除成功！', 'data': '', 'success': True}
+2019-06-13 15:28:22,076 test3_地址流程.py[line:94] INFO 删除地址结束，测试结果为：成功
+2019-06-13 15:28:22,167 test3_地址流程.py[line:103] INFO 登录、添加、查询、修改、删除地址流程测试结果:用例总数1其中通过用例1条，失败用例0条
+2019-06-13 15:28:22,460 test3_提交订单.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8801//zlead/order/addOrder
+
+2019-06-13 15:28:22,570 test3_提交订单.py[line:49] INFO 第1条用例"提交订单成功"开始执行
+2019-06-13 15:28:22,669 test3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3581', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-13 15:28:22,803 test3_提交订单.py[line:54] INFO 返回数据:{'code': 1, 'message': '提交订单成功', 'data': {'orderType': 0, 'orderId': 50004765, 'orderSn': '201906133599'}, 'success': True}
+2019-06-13 15:28:22,912 test3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-13 15:28:23,023 test3_提交订单.py[line:61] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:23,238 test3_提交订单.py[line:49] INFO 第2条用例"提交订单成功"开始执行
+2019-06-13 15:28:23,253 test3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3581', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-13 15:28:23,297 test3_提交订单.py[line:54] INFO 返回数据:{'code': 1, 'message': '提交订单成功', 'data': {'orderType': 0, 'orderId': 50004766, 'orderSn': '201906135467'}, 'success': True}
+2019-06-13 15:28:23,321 test3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-13 15:28:23,343 test3_提交订单.py[line:61] INFO 第2条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:23,374 test3_提交订单.py[line:71] INFO 提交订单接口测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:28:23,391 test3_查询购物车.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/shopcart/shoppingCartGoods
+
+2019-06-13 15:28:23,501 test3_查询购物车.py[line:52] INFO 请求数据:{'code': 1, 'message': '返回购物车信息!', 'data': [{'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d2/0f9158d4d7654ce8a723810ad2ce2108.jpg', 'goodsId': 3748, 'count': 1, 'isMarketable': 1, 'facId': 43, 'shopName': '施勤丰五金厂商城', 'agentDiscount': 0.6, 'prodType': 0, 'thisGoodsModel': '', 'modelName': '重口味', 'specNames': None, 'goodsPointPrice': 0.0, 'goodsPrice': 6.6, 'thisGoodsAttr': ['200', '黑'], 'storeName': None, 'id': 14540, 'shopId': 722, 'stock': 138, 'goodsName': '天业乐哈哈后来就好了回来后回来了回来了呵'}], 'shopName': '施勤丰五金厂', 'facId': {'factory_id': 43}, 'shopId': 722}, {'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/7038e72a94d142f4983ba78b86c76beb.jpg', 'goodsId': 3423, 'count': 1, 'isMarketable': 1, 'facId': 35, 'shopName': '龙华建材经销公司商城', 'agentDiscount': 0.5, 'prodType': 0, 'thisGoodsModel': '', 'modelName': '网络特供110', 'specNames': '19*19', 'goodsPointPrice': 0.0, 'goodsPrice': 10.0, 'thisGoodsAttr': ['黄'], 'storeName': None, 'id': 14437, 'shopId': 710, 'stock': 10, 'goodsName': '金刚石小锯片锋利耐磨云石片波纹型瓷砖大理'}], 'shopName': '龙华建材经销公司', 'facId': {'factory_id': 35}, 'shopId': 710}, {'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/791739b0b7cf40aab268e34d07f4237d.jpg', 'goodsId': 3581, 'count': 14, 'isMarketable': 1, 'facId': 42, 'shopName': '王猛五金厂', 'agentDiscount': 0.5, 'prodType': 0, 'thisGoodsModel': '', 'modelName': 'DD_00001', 'specNames': None, 'goodsPointPrice': 0.0, 'goodsPrice': 99.0, 'thisGoodsAttr': ['200M', '室内', '红'], 'storeName': None, 'id': 14541, 'shopId': 721, 'stock': 999999936, 'goodsName': '灯灯灯灯灯灯灯'}], 'shopName': '王猛五金厂', 'facId': {'factory_id': 42}, 'shopId': 721}], 'success': True}
+2019-06-13 15:28:23,792 test3_查询购物车.py[line:62] INFO 执行SQL查询:SELECT sum(count) from t_shopping_cart where member_id = (SELECT id from t_member where member_id = '15500000000') and is_buy = '0'
+2019-06-13 15:28:23,985 test3_查询购物车.py[line:67] INFO 查询购物车成功
+2019-06-13 15:28:24,030 test3_查询购物车.py[line:72] INFO 查看购物车接口测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:28:24,051 test3_添加地址.py[line:22] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/memaddr/addOrUpdateMemberAddress
+
+2019-06-13 15:28:24,085 test3_添加地址.py[line:53] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=6565140E33E99616549AE7FAC0DDE496 for 192.168.3.214/>]>
+2019-06-13 15:28:24,112 test3_添加地址.py[line:55] INFO 登录成功
+2019-06-13 15:28:24,164 test3_添加地址.py[line:60] INFO 第1条用例"添加购物车成功"开始执行
+2019-06-13 15:28:24,192 test3_添加地址.py[line:65] INFO 请求数据:{'memberName': '徐徐', 'phone': '13100000000', 'provinceName': '上海市', 'cityName': '市辖区', 'countyName': '黄浦区', 'detailAddress': '泛太平洋大厦', 'isDefault': '1', 'type': '1'}
+2019-06-13 15:28:24,289 test3_添加地址.py[line:69] INFO 返回数据:{"code":1,"message":"地址添加成功！","data":"","success":true}
+2019-06-13 15:28:24,330 test3_添加地址.py[line:74] INFO 地址添加成功！
+2019-06-13 15:28:24,371 test3_添加地址.py[line:79] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:24,409 test3_添加地址.py[line:92] INFO 添加地址模块测试结果:用例总数1其中通过用例1条，失败用例0条
+2019-06-13 15:28:24,489 test3_立即购买商品详情页.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8801//zlead/order/newConfirmOrder
+
+2019-06-13 15:28:24,542 test3_立即购买商品详情页.py[line:47] INFO 第1条用例"提交订单成功"开始执行
+2019-06-13 15:28:24,556 test3_立即购买商品详情页.py[line:50] INFO 请求数据:{'goodsId': 3511, 'buyNum': 1}
+2019-06-13 15:28:24,585 test3_立即购买商品详情页.py[line:55] INFO 返回数据:{'code': 4, 'message': '库存不足，无法购买', 'data': '', 'success': False}
+2019-06-13 15:28:24,605 test3_立即购买商品详情页.py[line:67] INFO 第1条用例执行结束，执行结果:失败
+2019-06-13 15:28:24,619 test3_立即购买商品详情页.py[line:47] INFO 第2条用例"提交订单成功"开始执行
+2019-06-13 15:28:24,633 test3_立即购买商品详情页.py[line:50] INFO 请求数据:{'goodsId': 3511, 'buyNum': 1}
+2019-06-13 15:28:24,663 test3_立即购买商品详情页.py[line:55] INFO 返回数据:{'code': 4, 'message': '库存不足，无法购买', 'data': '', 'success': False}
+2019-06-13 15:28:24,683 test3_立即购买商品详情页.py[line:67] INFO 第2条用例执行结束，执行结果:失败
+2019-06-13 15:28:24,701 test3_立即购买商品详情页.py[line:70] INFO 立即购买(商品详情)接口测试结果:用例总数2条，其中通过用例0条，失败用例2条
+2019-06-13 15:28:24,718 test3_购物车流程.py[line:21] INFO 本次接口测试请求地址为：http://192.168.3.214:8801//zlead/shopcart/deleteShoppingCart
+
+2019-06-13 15:28:24,736 test3_购物车流程.py[line:35] INFO 开始登录
+2019-06-13 15:28:24,768 test3_购物车流程.py[line:39] INFO 请求数据信息为：{'account': '15500000000', 'password': '111111'}
+2019-06-13 15:28:24,788 test3_购物车流程.py[line:41] INFO 返回数据信息为：{'code': 1, 'message': '登录成功', 'data': {'headImg': None, 'memberType': 3, 'memberId': 2723, 'username': '15500000000'}, 'success': True}
+2019-06-13 15:28:24,805 test3_购物车流程.py[line:44] INFO 登录成功
+2019-06-13 15:28:24,818 test3_购物车流程.py[line:48] INFO 加入购物车开始
+2019-06-13 15:28:24,892 test3_购物车流程.py[line:54] INFO 添加购物车成功
+2019-06-13 15:28:24,903 test3_购物车流程.py[line:59] INFO 查询购物车开始
+2019-06-13 15:28:24,998 test3_购物车流程.py[line:61] INFO 返回数据:{'code': 1, 'message': '返回购物车信息!', 'data': [{'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d2/0f9158d4d7654ce8a723810ad2ce2108.jpg', 'goodsId': 3748, 'count': 2, 'isMarketable': 1, 'facId': 43, 'shopName': '施勤丰五金厂商城', 'agentDiscount': 0.6, 'prodType': 0, 'thisGoodsModel': '', 'modelName': '重口味', 'specNames': None, 'goodsPointPrice': 0.0, 'goodsPrice': 6.6, 'thisGoodsAttr': ['200', '黑'], 'storeName': None, 'id': 14546, 'shopId': 722, 'stock': 138, 'goodsName': '天业乐哈哈后来就好了回来后回来了回来了呵'}], 'shopName': '施勤丰五金厂', 'facId': {'factory_id': 43}, 'shopId': 722}, {'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/7038e72a94d142f4983ba78b86c76beb.jpg', 'goodsId': 3423, 'count': 1, 'isMarketable': 1, 'facId': 35, 'shopName': '龙华建材经销公司商城', 'agentDiscount': 0.5, 'prodType': 0, 'thisGoodsModel': '', 'modelName': '网络特供110', 'specNames': '19*19', 'goodsPointPrice': 0.0, 'goodsPrice': 10.0, 'thisGoodsAttr': ['黄'], 'storeName': None, 'id': 14437, 'shopId': 710, 'stock': 10, 'goodsName': '金刚石小锯片锋利耐磨云石片波纹型瓷砖大理'}], 'shopName': '龙华建材经销公司', 'facId': {'factory_id': 35}, 'shopId': 710}, {'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/791739b0b7cf40aab268e34d07f4237d.jpg', 'goodsId': 3581, 'count': 14, 'isMarketable': 1, 'facId': 42, 'shopName': '王猛五金厂', 'agentDiscount': 0.5, 'prodType': 0, 'thisGoodsModel': '', 'modelName': 'DD_00001', 'specNames': None, 'goodsPointPrice': 0.0, 'goodsPrice': 99.0, 'thisGoodsAttr': ['200M', '室内', '红'], 'storeName': None, 'id': 14541, 'shopId': 721, 'stock': 999999936, 'goodsName': '灯灯灯灯灯灯灯'}], 'shopName': '王猛五金厂', 'facId': {'factory_id': 42}, 'shopId': 721}], 'success': True}
+2019-06-13 15:28:25,165 test3_购物车流程.py[line:66] INFO 查询购物车成功
+2019-06-13 15:28:25,204 test3_购物车流程.py[line:70] INFO 删除购物车开始
+2019-06-13 15:28:25,248 test3_购物车流程.py[line:72] INFO 返回数据信息为：{'code': 1, 'message': '删除购物车成功', 'data': '', 'success': True}
+2019-06-13 15:28:25,290 test3_购物车流程.py[line:74] INFO 删除购物车开始
+2019-06-13 15:28:25,331 test3_购物车流程.py[line:81] INFO 删除购物车接口测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:28:25,376 test9_加入购物车.py[line:21] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/shopcart/addShoppingCart
+
+2019-06-13 15:28:25,433 test9_加入购物车.py[line:47] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=E0A79C8139FF7CF84B33AA09DA640A99 for 192.168.3.214/>]>
+2019-06-13 15:28:25,455 test9_加入购物车.py[line:49] INFO 登录成功
+2019-06-13 15:28:25,498 test9_加入购物车.py[line:54] INFO 第1条用例"添加购物车成功"开始执行
+2019-06-13 15:28:25,547 test9_加入购物车.py[line:58] INFO 请求数据:{'goodsId': '3581', 'count': '1', 'buyType': '0'}
+2019-06-13 15:28:25,605 test9_加入购物车.py[line:62] INFO 返回数据:{'code': 1, 'message': '添加购物车成功！', 'data': '', 'success': True}
+2019-06-13 15:28:25,637 test9_加入购物车.py[line:66] INFO 添加购物车成功！
+2019-06-13 15:28:25,670 test9_加入购物车.py[line:70] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:25,700 test9_加入购物车.py[line:54] INFO 第2条用例"添加购物车失败"开始执行
+2019-06-13 15:28:25,766 test9_加入购物车.py[line:58] INFO 请求数据:{'goodsId': '4102', 'count': '10', 'buyType': '0'}
+2019-06-13 15:28:25,831 test9_加入购物车.py[line:62] INFO 返回数据:{'code': 2, 'message': '库存不足，无法加入购物车', 'data': '', 'success': False}
+2019-06-13 15:28:25,872 test9_加入购物车.py[line:66] INFO 库存不足，无法加入购物车
+2019-06-13 15:28:25,913 test9_加入购物车.py[line:70] INFO 第2条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:25,925 test9_加入购物车.py[line:104] INFO 加入购物车模块测试结果:用例总数2其中通过用例2条，失败用例0条
+2019-06-13 15:28:37,641 test1_注册.py[line:16] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/member/registered
+
+2019-06-13 15:28:37,658 test1_注册.py[line:38] INFO 第1条用例"用户名和密码正确"开始执行
+2019-06-13 15:28:37,673 test1_注册.py[line:41] INFO 请求数据:{'phone': '19612121211', 'passWord': '111111', 'companyName': 'test', 'verifyCode': '111111'}
+2019-06-13 15:28:37,694 test1_注册.py[line:44] INFO 返回数据:{'code': 2, 'message': '验证码校验失败', 'data': '', 'success': False}
+2019-06-13 15:28:37,716 test1_注册.py[line:53] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:37,730 test1_注册.py[line:60] INFO 登录接口测试结果:用例总数[1]条，其中通过用例[1]条，失败用例[]条
+2019-06-13 15:28:37,747 test2_登录_商城端.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/member/login
+
+2019-06-13 15:28:37,815 test2_登录_商城端.py[line:40] INFO 第1条用例"用户名和密码正确"开始执行
+2019-06-13 15:28:37,827 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000000', 'password': '111111'}
+2019-06-13 15:28:37,848 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 1, 'message': '登录成功', 'data': {'headImg': None, 'memberType': 3, 'memberId': 2723, 'username': '15500000000'}, 'success': True}
+2019-06-13 15:28:37,872 test2_登录_商城端.py[line:51] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:37,886 test2_登录_商城端.py[line:40] INFO 第2条用例"用户名错误"开始执行
+2019-06-13 15:28:37,902 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000001', 'password': '111111'}
+2019-06-13 15:28:37,928 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '登录用户不存在', 'data': '', 'success': False}
+2019-06-13 15:28:37,953 test2_登录_商城端.py[line:51] INFO 第2条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:37,969 test2_登录_商城端.py[line:40] INFO 第3条用例"密码错误"开始执行
+2019-06-13 15:28:37,982 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000000', 'password': '111112'}
+2019-06-13 15:28:38,003 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '密码错误', 'data': '', 'success': False}
+2019-06-13 15:28:38,028 test2_登录_商城端.py[line:51] INFO 第3条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:38,043 test2_登录_商城端.py[line:40] INFO 第4条用例"用户名为10位"开始执行
+2019-06-13 15:28:38,056 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '1550010000', 'password': '111111'}
+2019-06-13 15:28:38,077 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '登录用户不存在', 'data': '', 'success': False}
+2019-06-13 15:28:38,102 test2_登录_商城端.py[line:51] INFO 第4条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:38,117 test2_登录_商城端.py[line:40] INFO 第5条用例"用户名为11位"开始执行
+2019-06-13 15:28:38,132 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '155000000000', 'password': '111111'}
+2019-06-13 15:28:38,154 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '登录用户不存在', 'data': '', 'success': False}
+2019-06-13 15:28:38,179 test2_登录_商城端.py[line:51] INFO 第5条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:38,195 test2_登录_商城端.py[line:40] INFO 第6条用例"用户名为空"开始执行
+2019-06-13 15:28:38,210 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': 'None', 'password': '111111'}
+2019-06-13 15:28:38,232 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '登录用户不存在', 'data': '', 'success': False}
+2019-06-13 15:28:38,257 test2_登录_商城端.py[line:51] INFO 第6条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:38,272 test2_登录_商城端.py[line:40] INFO 第7条用例"密码为空"开始执行
+2019-06-13 15:28:38,287 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000000', 'password': 'None'}
+2019-06-13 15:28:38,309 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 2, 'message': '密码错误', 'data': '', 'success': False}
+2019-06-13 15:28:38,335 test2_登录_商城端.py[line:51] INFO 第7条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:38,350 test2_登录_商城端.py[line:40] INFO 第8条用例"用户名和密码正确"开始执行
+2019-06-13 15:28:38,364 test2_登录_商城端.py[line:42] INFO 请求数据:{'account': '15500000000', 'password': '111111'}
+2019-06-13 15:28:38,386 test2_登录_商城端.py[line:44] INFO 返回数据:{'code': 1, 'message': '登录成功', 'data': {'headImg': None, 'memberType': 3, 'memberId': 2723, 'username': '15500000000'}, 'success': True}
+2019-06-13 15:28:38,413 test2_登录_商城端.py[line:51] INFO 第8条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:38,428 test2_登录_商城端.py[line:59] INFO 登录接口测试结果:用例总数8条，其中通过用例8条，失败用例0条
+2019-06-13 15:28:38,444 test2_登录_工厂PC端.py[line:22] INFO 本次接口测试请求地址为：http://192.168.3.214:8803//zlead/login.do
+
+2019-06-13 15:28:38,510 test2_登录_工厂PC端.py[line:45] INFO 登录URL：http://192.168.3.214:8803//zlead/login.do
+2019-06-13 15:28:38,539 test2_登录_工厂PC端.py[line:49] INFO 第1条用例"用户名和密码正确"开始执行
+2019-06-13 15:28:38,553 test2_登录_工厂PC端.py[line:51] INFO 请求数据:{'loginName': '12345678901', 'userPwd': '96e79218965eb72c92a549dd5a330112', 'tid': '0521b226717342378540a7924797aca1', 'rdmCode': ''}
+2019-06-13 15:28:38,585 test2_登录_工厂PC端.py[line:53] INFO 返回数据:{'state': True, 'data': '4c064f91a6ba7cc55b84c02638859b640554c38e'}
+2019-06-13 15:28:38,604 test2_登录_工厂PC端.py[line:57] INFO True
+2019-06-13 15:28:38,618 test2_登录_工厂PC端.py[line:58] INFO True
+2019-06-13 15:28:38,635 test2_登录_工厂PC端.py[line:62] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:38,650 test2_登录_工厂PC端.py[line:70] INFO 登录接口测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:28:38,694 test3_上传凭证.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8801//zlead/order/addOrder
+
+2019-06-13 15:28:38,726 test3_上传凭证.py[line:49] INFO 第1条用例"提交订单成功"开始执行
+2019-06-13 15:28:38,738 test3_上传凭证.py[line:52] INFO 请求数据:{'goodsId': '3581', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-13 15:28:38,784 test3_上传凭证.py[line:54] INFO 返回数据:{'code': 1, 'message': '提交订单成功', 'data': {'orderType': 0, 'orderId': 50004767, 'orderSn': '201906133051'}, 'success': True}
+2019-06-13 15:28:38,804 test3_上传凭证.py[line:57] INFO 预期结果：提交订单成功
+2019-06-13 15:28:38,820 test3_上传凭证.py[line:62] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:38,834 test3_上传凭证.py[line:72] INFO 添加凭证请求数据:{'amount': '11', 'img': 'http://139.224.113.24/group1/M00/00/06/rBN_h10As6SAYuhoAAEMazy6pHc589.jpg', 'payType': '1', 'payTime': '2019/06/12', 'payRemar': '11', 'orderIds': 50004767}
+2019-06-13 15:28:38,877 test3_上传凭证.py[line:76] INFO 添加凭证成功
+2019-06-13 15:28:38,890 test3_上传凭证.py[line:82] INFO 登录、提交订单、上传凭证流程测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:28:38,908 test3_发送验证码.py[line:18] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/member/sendVerifyCode
+
+2019-06-13 15:28:38,926 test3_发送验证码.py[line:39] INFO 第1条用例"发送验证码成功"执行开始
+2019-06-13 15:28:38,943 test3_发送验证码.py[line:41] INFO 发出请求数据：http://192.168.3.214:8801/zlead/member/sendVerifyCode{'phone': '15500000000'}
+2019-06-13 15:28:39,036 test3_发送验证码.py[line:43] INFO 返回请求数据：{'code': 1, 'message': '验证码发送成功', 'data': '', 'success': True}
+2019-06-13 15:28:39,080 test3_发送验证码.py[line:47] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:39,097 test3_发送验证码.py[line:55] INFO 发送验证码接口测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:28:39,133 test3_地址流程.py[line:33] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=50612D7AD0DFF058FF7016A7158A8FC9 for 192.168.3.214/>]>
+2019-06-13 15:28:39,155 test3_地址流程.py[line:35] INFO 登录成功
+2019-06-13 15:28:39,173 test3_地址流程.py[line:39] INFO 添加地址开始
+2019-06-13 15:28:39,191 test3_地址流程.py[line:41] INFO 添加地址请求数据:{'memberName': 'testxu', 'phone': '1311111111', 'provinceName': '上海市', 'cityName': '市辖区', 'countyName': '黄浦区', 'detailAddress': '泛太平洋大厦', 'isDefault': 1, 'type': 1}
+2019-06-13 15:28:39,258 test3_地址流程.py[line:44] INFO 添加地址返回数据:{"code":1,"message":"地址添加成功！","data":"","success":true}
+2019-06-13 15:28:39,292 test3_地址流程.py[line:46] INFO 添加地址结束，测试结果为：成功
+2019-06-13 15:28:39,331 test3_地址流程.py[line:64] INFO 查询地址开始
+2019-06-13 15:28:39,346 test3_地址流程.py[line:66] INFO 请求数据为：http://192.168.3.214:8801/zlead/memaddr/getAllAgentAddress
+2019-06-13 15:28:39,389 test3_地址流程.py[line:68] INFO 查询地址返回数据为：{'code': 1, 'message': '地址列表', 'data': {'0': [{'id': 2078, 'memberId': 2723, 'memberName': 'testxu', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 1, 'isFact': 0, 'factId': 0, 'factName': '', 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 1046, 'memberId': 2723, 'memberName': '赵敏敏', 'phone': '15500000000', 'address': '订单', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '河北省', 'cityName': '石家庄市', 'regionName': '灵寿县'}, {'id': 1080, 'memberId': 2723, 'memberName': '张三丰', 'phone': '18662467587', 'address': '北京西路', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 1255, 'memberId': 2723, 'memberName': '袁文', 'phone': '18662467587', 'address': '对对对', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '县', 'regionName': '崇明县'}, {'id': 1258, 'memberId': 2723, 'memberName': '涣汗大号11111111111111111111111111111111111111111111111111111111111111111111111111111111', 'phone': '15516779923', 'address': '订单', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '广东省', 'cityName': '广州市', 'regionName': '市辖区'}, {'id': 1282, 'memberId': 2723, 'memberName': '与UU回家结婚回家就看呵呵姐姐姐姐姐姐姐姐姐姐姐姐姐姐姐姐家', 'phone': '15555555555', 'address': '订单', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '湖南省', 'cityName': '长沙市', 'regionName': '市辖区'}, {'id': 1398, 'memberId': 2723, 'memberName': 'sdddddddddddddddddddddddddddddfffffffffffffffffffffffffffffffff', 'phone': '15555555555', 'address': '对对对', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '河南省', 'cityName': '郑州市', 'regionName': '市辖区'}, {'id': 1399, 'memberId': 2723, 'memberName': 'sdddddddddddddddddddddddddddddfffffffffffffffffffffffffffffffff', 'phone': '15555555555', 'address': '对对对', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '河南省', 'cityName': '郑州市', 'regionName': '市辖区'}, {'id': 1428, 'memberId': 2723, 'memberName': 'vfffffffff', 'phone': '11554455555', 'address': 'fffff', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '湖北省', 'cityName': '武汉市', 'regionName': '市辖区'}, {'id': 1451, 'memberId': 2723, 'memberName': '对对对大大大大大大大', 'phone': '11111111111', 'address': '对对对大大大大大大大大大大大大大大大大大', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '湖南省', 'cityName': '长沙市', 'regionName': '市辖区'}, {'id': 1637, 'memberId': 2723, 'memberName': '徐培庆', 'phone': '17621463842', 'address': 'dsafsafdsaf', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '北京市', 'cityName': '市辖区', 'regionName': '东城区'}, {'id': 2055, 'memberId': 2723, 'memberName': 'testxu1', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 2067, 'memberId': 2723, 'memberName': 'testxu', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 2069, 'memberId': 2723, 'memberName': 'testxu', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 2071, 'memberId': 2723, 'memberName': 'testxu', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 2074, 'memberId': 2723, 'memberName': 'testxu', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 2076, 'memberId': 2723, 'memberName': 'testxu', 'phone': '1311111111', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}, {'id': 2077, 'memberId': 2723, 'memberName': '徐徐', 'phone': '13100000000', 'address': '泛太平洋大厦', 'isDefault': 0, 'isFact': 0, 'factId': 0, 'factName': None, 'provinceName': '上海市', 'cityName': '市辖区', 'regionName': '黄浦区'}], '42': [{'id': 1545, 'memberId': 2723, 'memberName': '老赵', 'phone': '15500000000', 'address': '问问', 'isDefault': 0, 'isFact': 1, 'factId': 42, 'factName': '王猛五金厂', 'provinceName': '北京市', 'cityName': '县', 'regionName': '密云县'}], '43': [{'id': 1694, 'memberId': 2723, 'memberName': '', 'phone': '', 'address': '果皮', 'isDefault': 0, 'isFact': 1, 'factId': 43, 'factName': '施勤丰五金厂', 'provinceName': '天津市', 'cityName': '市辖区', 'regionName': '和平区'}]}, 'success': True}
+2019-06-13 15:28:39,710 test3_地址流程.py[line:70] INFO 查询地址结束，测试结果为：成功
+2019-06-13 15:28:40,213 test3_地址流程.py[line:77] INFO 更新地址开始
+2019-06-13 15:28:40,422 test3_地址流程.py[line:79] INFO 更新地址请求数据:{'addressId': 2077, 'memberName': 'testxu1', 'phone': '1311111111', 'provinceName': '上海市', 'cityName': '市辖区', 'countyName': '黄浦区', 'detailAddress': '泛太平洋大厦', 'isDefault': 1, 'type': 2}
+2019-06-13 15:28:41,280 test3_地址流程.py[line:81] INFO 更新地址返回数据为：{"code":1,"message":"地址修改成功！","data":"","success":true}
+2019-06-13 15:28:41,517 test3_地址流程.py[line:83] INFO 更新地址结束，测试结果为：成功
+2019-06-13 15:28:41,754 test3_地址流程.py[line:89] INFO 删除地址开始
+2019-06-13 15:28:41,873 test3_地址流程.py[line:92] INFO 删除地址返回数据：{'code': 1, 'message': '地址删除成功！', 'data': '', 'success': True}
+2019-06-13 15:28:41,982 test3_地址流程.py[line:94] INFO 删除地址结束，测试结果为：成功
+2019-06-13 15:28:42,093 test3_地址流程.py[line:103] INFO 登录、添加、查询、修改、删除地址流程测试结果:用例总数1其中通过用例1条，失败用例0条
+2019-06-13 15:28:42,449 test3_提交订单.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8801//zlead/order/addOrder
+
+2019-06-13 15:28:42,599 test3_提交订单.py[line:49] INFO 第1条用例"提交订单成功"开始执行
+2019-06-13 15:28:42,717 test3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3581', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-13 15:28:42,871 test3_提交订单.py[line:54] INFO 返回数据:{'code': 1, 'message': '提交订单成功', 'data': {'orderType': 0, 'orderId': 50004768, 'orderSn': '201906134201'}, 'success': True}
+2019-06-13 15:28:43,001 test3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-13 15:28:43,131 test3_提交订单.py[line:61] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:43,402 test3_提交订单.py[line:49] INFO 第2条用例"提交订单成功"开始执行
+2019-06-13 15:28:43,417 test3_提交订单.py[line:52] INFO 请求数据:{'goodsId': '3581', 'buyNum': '1', 'buyType': '1', 'addressId': '1638', 'storeBuyType': '1', 'orderType': '0'}
+2019-06-13 15:28:43,463 test3_提交订单.py[line:54] INFO 返回数据:{'code': 1, 'message': '提交订单成功', 'data': {'orderType': 0, 'orderId': 50004769, 'orderSn': '201906136919'}, 'success': True}
+2019-06-13 15:28:43,485 test3_提交订单.py[line:57] INFO 预期结果：提交订单成功
+2019-06-13 15:28:43,507 test3_提交订单.py[line:61] INFO 第2条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:43,536 test3_提交订单.py[line:71] INFO 提交订单接口测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:28:43,552 test3_查询购物车.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/shopcart/shoppingCartGoods
+
+2019-06-13 15:28:43,638 test3_查询购物车.py[line:52] INFO 请求数据:{'code': 1, 'message': '返回购物车信息!', 'data': [{'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/7038e72a94d142f4983ba78b86c76beb.jpg', 'goodsId': 3423, 'count': 1, 'isMarketable': 1, 'facId': 35, 'shopName': '龙华建材经销公司商城', 'agentDiscount': 0.5, 'prodType': 0, 'thisGoodsModel': '', 'modelName': '网络特供110', 'specNames': '19*19', 'goodsPointPrice': 0.0, 'goodsPrice': 10.0, 'thisGoodsAttr': ['黄'], 'storeName': None, 'id': 14437, 'shopId': 710, 'stock': 10, 'goodsName': '金刚石小锯片锋利耐磨云石片波纹型瓷砖大理'}], 'shopName': '龙华建材经销公司', 'facId': {'factory_id': 35}, 'shopId': 710}, {'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/791739b0b7cf40aab268e34d07f4237d.jpg', 'goodsId': 3581, 'count': 15, 'isMarketable': 1, 'facId': 42, 'shopName': '王猛五金厂', 'agentDiscount': 0.5, 'prodType': 0, 'thisGoodsModel': '', 'modelName': 'DD_00001', 'specNames': None, 'goodsPointPrice': 0.0, 'goodsPrice': 99.0, 'thisGoodsAttr': ['200M', '室内', '红'], 'storeName': None, 'id': 14547, 'shopId': 721, 'stock': 999999933, 'goodsName': '灯灯灯灯灯灯灯'}], 'shopName': '王猛五金厂', 'facId': {'factory_id': 42}, 'shopId': 721}], 'success': True}
+2019-06-13 15:28:43,850 test3_查询购物车.py[line:62] INFO 执行SQL查询:SELECT sum(count) from t_shopping_cart where member_id = (SELECT id from t_member where member_id = '15500000000') and is_buy = '0'
+2019-06-13 15:28:43,998 test3_查询购物车.py[line:67] INFO 查询购物车成功
+2019-06-13 15:28:44,032 test3_查询购物车.py[line:72] INFO 查看购物车接口测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:28:44,070 test3_添加地址.py[line:22] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/memaddr/addOrUpdateMemberAddress
+
+2019-06-13 15:28:44,101 test3_添加地址.py[line:53] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=EC7047E1EBD055A8154FA24196ACAD45 for 192.168.3.214/>]>
+2019-06-13 15:28:44,121 test3_添加地址.py[line:55] INFO 登录成功
+2019-06-13 15:28:44,154 test3_添加地址.py[line:60] INFO 第1条用例"添加购物车成功"开始执行
+2019-06-13 15:28:44,171 test3_添加地址.py[line:65] INFO 请求数据:{'memberName': '徐徐', 'phone': '13100000000', 'provinceName': '上海市', 'cityName': '市辖区', 'countyName': '黄浦区', 'detailAddress': '泛太平洋大厦', 'isDefault': '1', 'type': '1'}
+2019-06-13 15:28:44,248 test3_添加地址.py[line:69] INFO 返回数据:{"code":1,"message":"地址添加成功！","data":"","success":true}
+2019-06-13 15:28:44,356 test3_添加地址.py[line:74] INFO 地址添加成功！
+2019-06-13 15:28:44,388 test3_添加地址.py[line:79] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:44,416 test3_添加地址.py[line:92] INFO 添加地址模块测试结果:用例总数1其中通过用例1条，失败用例0条
+2019-06-13 15:28:44,477 test3_立即购买商品详情页.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8801//zlead/order/newConfirmOrder
+
+2019-06-13 15:28:44,546 test3_立即购买商品详情页.py[line:47] INFO 第1条用例"提交订单成功"开始执行
+2019-06-13 15:28:44,558 test3_立即购买商品详情页.py[line:50] INFO 请求数据:{'goodsId': 3511, 'buyNum': 1}
+2019-06-13 15:28:44,586 test3_立即购买商品详情页.py[line:55] INFO 返回数据:{'code': 4, 'message': '库存不足，无法购买', 'data': '', 'success': False}
+2019-06-13 15:28:44,605 test3_立即购买商品详情页.py[line:67] INFO 第1条用例执行结束，执行结果:失败
+2019-06-13 15:28:44,619 test3_立即购买商品详情页.py[line:47] INFO 第2条用例"提交订单成功"开始执行
+2019-06-13 15:28:44,633 test3_立即购买商品详情页.py[line:50] INFO 请求数据:{'goodsId': 3511, 'buyNum': 1}
+2019-06-13 15:28:44,663 test3_立即购买商品详情页.py[line:55] INFO 返回数据:{'code': 4, 'message': '库存不足，无法购买', 'data': '', 'success': False}
+2019-06-13 15:28:44,683 test3_立即购买商品详情页.py[line:67] INFO 第2条用例执行结束，执行结果:失败
+2019-06-13 15:28:44,700 test3_立即购买商品详情页.py[line:70] INFO 立即购买(商品详情)接口测试结果:用例总数2条，其中通过用例0条，失败用例2条
+2019-06-13 15:28:44,716 test3_购物车流程.py[line:21] INFO 本次接口测试请求地址为：http://192.168.3.214:8801//zlead/shopcart/deleteShoppingCart
+
+2019-06-13 15:28:44,734 test3_购物车流程.py[line:35] INFO 开始登录
+2019-06-13 15:28:44,763 test3_购物车流程.py[line:39] INFO 请求数据信息为：{'account': '15500000000', 'password': '111111'}
+2019-06-13 15:28:44,784 test3_购物车流程.py[line:41] INFO 返回数据信息为：{'code': 1, 'message': '登录成功', 'data': {'headImg': None, 'memberType': 3, 'memberId': 2723, 'username': '15500000000'}, 'success': True}
+2019-06-13 15:28:44,798 test3_购物车流程.py[line:44] INFO 登录成功
+2019-06-13 15:28:44,810 test3_购物车流程.py[line:48] INFO 加入购物车开始
+2019-06-13 15:28:44,880 test3_购物车流程.py[line:54] INFO 添加购物车成功
+2019-06-13 15:28:44,890 test3_购物车流程.py[line:59] INFO 查询购物车开始
+2019-06-13 15:28:44,982 test3_购物车流程.py[line:61] INFO 返回数据:{'code': 1, 'message': '返回购物车信息!', 'data': [{'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d2/0f9158d4d7654ce8a723810ad2ce2108.jpg', 'goodsId': 3748, 'count': 1, 'isMarketable': 1, 'facId': 43, 'shopName': '施勤丰五金厂商城', 'agentDiscount': 0.6, 'prodType': 0, 'thisGoodsModel': '', 'modelName': '重口味', 'specNames': None, 'goodsPointPrice': 0.0, 'goodsPrice': 6.6, 'thisGoodsAttr': ['200', '黑'], 'storeName': None, 'id': 14548, 'shopId': 722, 'stock': 138, 'goodsName': '天业乐哈哈后来就好了回来后回来了回来了呵'}], 'shopName': '施勤丰五金厂', 'facId': {'factory_id': 43}, 'shopId': 722}, {'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/7038e72a94d142f4983ba78b86c76beb.jpg', 'goodsId': 3423, 'count': 1, 'isMarketable': 1, 'facId': 35, 'shopName': '龙华建材经销公司商城', 'agentDiscount': 0.5, 'prodType': 0, 'thisGoodsModel': '', 'modelName': '网络特供110', 'specNames': '19*19', 'goodsPointPrice': 0.0, 'goodsPrice': 10.0, 'thisGoodsAttr': ['黄'], 'storeName': None, 'id': 14437, 'shopId': 710, 'stock': 10, 'goodsName': '金刚石小锯片锋利耐磨云石片波纹型瓷砖大理'}], 'shopName': '龙华建材经销公司', 'facId': {'factory_id': 35}, 'shopId': 710}, {'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/791739b0b7cf40aab268e34d07f4237d.jpg', 'goodsId': 3581, 'count': 15, 'isMarketable': 1, 'facId': 42, 'shopName': '王猛五金厂', 'agentDiscount': 0.5, 'prodType': 0, 'thisGoodsModel': '', 'modelName': 'DD_00001', 'specNames': None, 'goodsPointPrice': 0.0, 'goodsPrice': 99.0, 'thisGoodsAttr': ['200M', '室内', '红'], 'storeName': None, 'id': 14547, 'shopId': 721, 'stock': 999999933, 'goodsName': '灯灯灯灯灯灯灯'}], 'shopName': '王猛五金厂', 'facId': {'factory_id': 42}, 'shopId': 721}], 'success': True}
+2019-06-13 15:28:45,167 test3_购物车流程.py[line:66] INFO 查询购物车成功
+2019-06-13 15:28:45,216 test3_购物车流程.py[line:70] INFO 删除购物车开始
+2019-06-13 15:28:45,267 test3_购物车流程.py[line:72] INFO 返回数据信息为：{'code': 1, 'message': '删除购物车成功', 'data': '', 'success': True}
+2019-06-13 15:28:45,318 test3_购物车流程.py[line:74] INFO 删除购物车开始
+2019-06-13 15:28:45,383 test3_购物车流程.py[line:81] INFO 删除购物车接口测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:28:45,431 test9_加入购物车.py[line:21] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/shopcart/addShoppingCart
+
+2019-06-13 15:28:45,499 test9_加入购物车.py[line:47] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=ED6C8CCC96DC5DCBEC4115BD71D79F86 for 192.168.3.214/>]>
+2019-06-13 15:28:45,525 test9_加入购物车.py[line:49] INFO 登录成功
+2019-06-13 15:28:45,565 test9_加入购物车.py[line:54] INFO 第1条用例"添加购物车成功"开始执行
+2019-06-13 15:28:45,626 test9_加入购物车.py[line:58] INFO 请求数据:{'goodsId': '3581', 'count': '1', 'buyType': '0'}
+2019-06-13 15:28:45,681 test9_加入购物车.py[line:62] INFO 返回数据:{'code': 1, 'message': '添加购物车成功！', 'data': '', 'success': True}
+2019-06-13 15:28:45,714 test9_加入购物车.py[line:66] INFO 添加购物车成功！
+2019-06-13 15:28:45,747 test9_加入购物车.py[line:70] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:45,777 test9_加入购物车.py[line:54] INFO 第2条用例"添加购物车失败"开始执行
+2019-06-13 15:28:45,842 test9_加入购物车.py[line:58] INFO 请求数据:{'goodsId': '4102', 'count': '10', 'buyType': '0'}
+2019-06-13 15:28:45,900 test9_加入购物车.py[line:62] INFO 返回数据:{'code': 2, 'message': '库存不足，无法加入购物车', 'data': '', 'success': False}
+2019-06-13 15:28:45,944 test9_加入购物车.py[line:66] INFO 库存不足，无法加入购物车
+2019-06-13 15:28:45,987 test9_加入购物车.py[line:70] INFO 第2条用例执行结束，执行结果:通过!
+
+2019-06-13 15:28:46,015 test9_加入购物车.py[line:104] INFO 加入购物车模块测试结果:用例总数2其中通过用例2条，失败用例0条

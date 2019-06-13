@@ -1,0 +1,43 @@
+2019-06-13 15:31:00,320 test3_立即购买商品详情页.py[line:19] INFO 本次接口测试请求地址为：http://192.168.3.214:8801//zlead/order/newConfirmOrder
+
+2019-06-13 15:31:00,392 test3_立即购买商品详情页.py[line:47] INFO 第1条用例"提交订单成功"开始执行
+2019-06-13 15:31:00,405 test3_立即购买商品详情页.py[line:50] INFO 请求数据:{'goodsId': 3511, 'buyNum': 1}
+2019-06-13 15:31:00,433 test3_立即购买商品详情页.py[line:55] INFO 返回数据:{'code': 4, 'message': '库存不足，无法购买', 'data': '', 'success': False}
+2019-06-13 15:31:00,452 test3_立即购买商品详情页.py[line:67] INFO 第1条用例执行结束，执行结果:失败
+2019-06-13 15:31:00,466 test3_立即购买商品详情页.py[line:47] INFO 第2条用例"提交订单成功"开始执行
+2019-06-13 15:31:00,480 test3_立即购买商品详情页.py[line:50] INFO 请求数据:{'goodsId': 3511, 'buyNum': 1}
+2019-06-13 15:31:00,509 test3_立即购买商品详情页.py[line:55] INFO 返回数据:{'code': 4, 'message': '库存不足，无法购买', 'data': '', 'success': False}
+2019-06-13 15:31:00,529 test3_立即购买商品详情页.py[line:67] INFO 第2条用例执行结束，执行结果:失败
+2019-06-13 15:31:00,546 test3_立即购买商品详情页.py[line:70] INFO 立即购买(商品详情)接口测试结果:用例总数2条，其中通过用例0条，失败用例2条
+2019-06-13 15:31:00,562 test3_购物车流程.py[line:21] INFO 本次接口测试请求地址为：http://192.168.3.214:8801//zlead/shopcart/deleteShoppingCart
+
+2019-06-13 15:31:00,580 test3_购物车流程.py[line:35] INFO 开始登录
+2019-06-13 15:31:00,611 test3_购物车流程.py[line:39] INFO 请求数据信息为：{'account': '15500000000', 'password': '111111'}
+2019-06-13 15:31:00,631 test3_购物车流程.py[line:41] INFO 返回数据信息为：{'code': 1, 'message': '登录成功', 'data': {'headImg': None, 'memberType': 3, 'memberId': 2723, 'username': '15500000000'}, 'success': True}
+2019-06-13 15:31:00,647 test3_购物车流程.py[line:44] INFO 登录成功
+2019-06-13 15:31:00,659 test3_购物车流程.py[line:48] INFO 加入购物车开始
+2019-06-13 15:31:00,732 test3_购物车流程.py[line:54] INFO 添加购物车成功
+2019-06-13 15:31:00,742 test3_购物车流程.py[line:59] INFO 查询购物车开始
+2019-06-13 15:31:00,836 test3_购物车流程.py[line:61] INFO 返回数据:{'code': 1, 'message': '返回购物车信息!', 'data': [{'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d2/0f9158d4d7654ce8a723810ad2ce2108.jpg', 'goodsId': 3748, 'count': 1, 'isMarketable': 1, 'facId': 43, 'shopName': '施勤丰五金厂商城', 'agentDiscount': 0.6, 'prodType': 0, 'thisGoodsModel': '', 'modelName': '重口味', 'specNames': None, 'goodsPointPrice': 0.0, 'goodsPrice': 6.6, 'thisGoodsAttr': ['200', '黑'], 'storeName': None, 'id': 14552, 'shopId': 722, 'stock': 138, 'goodsName': '天业乐哈哈后来就好了回来后回来了回来了呵'}], 'shopName': '施勤丰五金厂', 'facId': {'factory_id': 43}, 'shopId': 722}, {'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/7038e72a94d142f4983ba78b86c76beb.jpg', 'goodsId': 3423, 'count': 1, 'isMarketable': 1, 'facId': 35, 'shopName': '龙华建材经销公司商城', 'agentDiscount': 0.5, 'prodType': 0, 'thisGoodsModel': '', 'modelName': '网络特供110', 'specNames': '19*19', 'goodsPointPrice': 0.0, 'goodsPrice': 10.0, 'thisGoodsAttr': ['黄'], 'storeName': None, 'id': 14437, 'shopId': 710, 'stock': 10, 'goodsName': '金刚石小锯片锋利耐磨云石片波纹型瓷砖大理'}], 'shopName': '龙华建材经销公司', 'facId': {'factory_id': 35}, 'shopId': 710}, {'goodsList': [{'goodsImg': 'http://210.22.139.138:58803/myapp/uploads/attach/201904/d1/791739b0b7cf40aab268e34d07f4237d.jpg', 'goodsId': 3581, 'count': 16, 'isMarketable': 1, 'facId': 42, 'shopName': '王猛五金厂', 'agentDiscount': 0.5, 'prodType': 0, 'thisGoodsModel': '', 'modelName': 'DD_00001', 'specNames': None, 'goodsPointPrice': 0.0, 'goodsPrice': 99.0, 'thisGoodsAttr': ['200M', '室内', '红'], 'storeName': None, 'id': 14549, 'shopId': 721, 'stock': 999999930, 'goodsName': '灯灯灯灯灯灯灯'}], 'shopName': '王猛五金厂', 'facId': {'factory_id': 42}, 'shopId': 721}], 'success': True}
+2019-06-13 15:31:01,018 test3_购物车流程.py[line:66] INFO 查询购物车成功
+2019-06-13 15:31:01,055 test3_购物车流程.py[line:70] INFO 删除购物车开始
+2019-06-13 15:31:01,099 test3_购物车流程.py[line:72] INFO 返回数据信息为：{'code': 1, 'message': '删除购物车成功', 'data': '', 'success': True}
+2019-06-13 15:31:01,140 test3_购物车流程.py[line:74] INFO 删除购物车开始
+2019-06-13 15:31:01,178 test3_购物车流程.py[line:81] INFO 删除购物车接口测试结果:用例总数1条，其中通过用例1条，失败用例0条
+2019-06-13 15:31:01,221 test9_加入购物车.py[line:21] INFO 本次接口测试请求地址为：http://192.168.3.214:8801/zlead/shopcart/addShoppingCart
+
+2019-06-13 15:31:01,275 test9_加入购物车.py[line:47] INFO 获取cookie成功，cookies=<RequestsCookieJar[<Cookie JSESSIONID=2836D4691A6E928A10DA1E38686709CE for 192.168.3.214/>]>
+2019-06-13 15:31:01,295 test9_加入购物车.py[line:49] INFO 登录成功
+2019-06-13 15:31:01,337 test9_加入购物车.py[line:54] INFO 第1条用例"添加购物车成功"开始执行
+2019-06-13 15:31:01,383 test9_加入购物车.py[line:58] INFO 请求数据:{'goodsId': '3581', 'count': '1', 'buyType': '0'}
+2019-06-13 15:31:01,443 test9_加入购物车.py[line:62] INFO 返回数据:{'code': 1, 'message': '添加购物车成功！', 'data': '', 'success': True}
+2019-06-13 15:31:01,475 test9_加入购物车.py[line:66] INFO 添加购物车成功！
+2019-06-13 15:31:01,507 test9_加入购物车.py[line:70] INFO 第1条用例执行结束，执行结果:通过!
+
+2019-06-13 15:31:01,538 test9_加入购物车.py[line:54] INFO 第2条用例"添加购物车失败"开始执行
+2019-06-13 15:31:01,608 test9_加入购物车.py[line:58] INFO 请求数据:{'goodsId': '4102', 'count': '10', 'buyType': '0'}
+2019-06-13 15:31:01,669 test9_加入购物车.py[line:62] INFO 返回数据:{'code': 2, 'message': '库存不足，无法加入购物车', 'data': '', 'success': False}
+2019-06-13 15:31:01,710 test9_加入购物车.py[line:66] INFO 库存不足，无法加入购物车
+2019-06-13 15:31:01,752 test9_加入购物车.py[line:70] INFO 第2条用例执行结束，执行结果:通过!
+
+2019-06-13 15:31:01,765 test9_加入购物车.py[line:104] INFO 加入购物车模块测试结果:用例总数2其中通过用例2条，失败用例0条
